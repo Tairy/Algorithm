@@ -68,10 +68,65 @@ void SelectSort1(SqList *L){
     }
 }
 
-/*插入排序*/
+/*插入排序 未完成*/
 
-void InsertSort(SqList *){
+void InsertSort0(SqList *L){
+    int i, j;
+    for(i = 1; i < L -> length; i++){
+        for(j = i+1; j < L -> length; j++){
+            if(L -> r[i] < L -> r[j]){
+                swap(L,i,j);
+            }
+        }
+    }
+}
 
+void InsertSort1(SqList *L){
+    int i,j;
+    for(i=2;i<L->length;i++){
+        if(L->r[i]<L->r[i-1]){
+            L->r[0]=L->r[i];
+            for(j=i-1;L->r[j]>L->r[0];j--){
+                L->r[j+1]=L->r[j];
+            }
+            L->r[j+1]=L->r[0];
+        }
+    }
+}
+
+void InsertSort2(SqList *L){
+
+}
+
+/*快速排序*/
+
+int Partition(SqList *L, int low, int high){
+    int pivotkey;
+    pivotkey=L->r[low];
+    while(low<high){
+        while(low<high&&L->r[high]>=pivotkey)
+            high--;
+        swap(L,low,high);
+        while(low<high&&L->r[low]<=pivotkey)
+            low++;
+        swap(L,low,high);
+    }
+
+    return low;
+}
+
+void QSort(SqList *L, int low, int high){
+    int pivot;
+    if(low<high){
+        pivot=Partition(L,low,high);
+
+        QSort(L,low,pivot-1);
+        QSort(L,pivot+1,high);
+    }
+}
+
+void QuickSort(SqList *L){
+    QSort(L,1,L->length);
 }
 
 int main()
@@ -82,7 +137,7 @@ int main()
        L.r[t] = a[t];
     }
     L.length = 11;
-    SelectSort1(&L);
+    InsertSort1(&L);
     for(int i = 0; i < L.length; i++){
         cout<<L.r[i]<<endl;
     }
