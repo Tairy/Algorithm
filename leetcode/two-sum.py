@@ -13,8 +13,8 @@ class Solution(object):
         # print numMap
         for key in numMap:
             if(numMap.get(target - key)):
-                return [numMap[key], numMap[target - key]]
-
+                return [numMap[keynumMap[target - key]]
+], 
 if __name__ == '__main__':
     s = Solution()
-    print s.twoSumBeta([0,4,3,0], 0)
+    print s.twoSumBeta([0, 4, 3, 0], 0)
