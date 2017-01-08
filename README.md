@@ -13,6 +13,11 @@ Algorithm
 - Problem: [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
 - Solution: [leetcode/intersection-of-two-arrays.py](https://github.com/Tairy/Algorithm/blob/master/leetcode/intersection-of-two-arrays.py)
 
+#### Single Number
+
+- Problem: [Single Number](https://leetcode.com/problems/single-number/)
+- Solution: [leetcode/single-number.cpp](https://github.com/Tairy/Algorithm/blob/master/leetcode/single-number.cpp)
+
 #### Hamming Distance
 
 - Problem: [Hamming Distance](https://leetcode.com/problems/hamming-distance/)
@@ -34,7 +39,7 @@ Algorithm
 
 ### Unofficial
 
-#### Find nums appear once
+#### Single Two Number
 
-- Problem: [数组中只出现一次的数字](http://zhedahht.blog.163.com/blog/static/2541117420071128950682/)
-- [unofficial/find-nums-appear-once.cpp](https://github.com/Tairy/Algorithm/blob/master/unofficial/find-nums-appear-once.cpp)
+- Problem: [Single Two Number](http://zhedahht.blog.163.com/blog/static/2541117420071128950682/)
+- [unofficial/single-two-number.cpp](https://github.com/Tairy/Algorithm/blob/master/unofficial/single-two-number.cpp)
