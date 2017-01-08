@@ -42,4 +42,4 @@ Algorithm
 #### Single Two Number
 
 - Problem: [Single Two Number](http://zhedahht.blog.163.com/blog/static/2541117420071128950682/)
-- [unofficial/single-two-number.cpp](https://github.com/Tairy/Algorithm/blob/master/unofficial/single-two-number.cpp)
+- Solution: [unofficial/single-two-number.cpp](https://github.com/Tairy/Algorithm/blob/master/unofficial/single-two-number.cpp)
