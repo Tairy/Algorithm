@@ -11,7 +11,12 @@ Algorithm
 #### Intersection of Two Arrays
 
 - Problem: [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
-- Solution: [leetcode/intersection-of-two-arrays-1.py](https://github.com/Tairy/Algorithm/blob/master/leetcode/intersection-of-two-arrays-1.py)
+- Solution: [leetcode/intersection-of-two-arrays.py](https://github.com/Tairy/Algorithm/blob/master/leetcode/intersection-of-two-arrays.py)
+
+#### Hamming Distance
+
+- Problem: [Hamming Distance](https://leetcode.com/problems/hamming-distance/)
+- Solution: [leetcode/hamming-distance.cpp](https://github.com/Tairy/Algorithm/blob/master/leetcode/hamming-distance.cpp)
 
 ### Introduction to Algorithms
 
