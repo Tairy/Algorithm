@@ -20,39 +20,39 @@ class Stack
 Stack::Stack(int max)
 {
   if(max > 0) {
-    this->_stackList = new int[max];
-    this->top = 0;
-    this->_max = max;
+    _stackList = new int[max];
+    top = 0;
+    _max = max;
   }
 }
 
 int Stack::push(int element)
 {
-  if(this->isFull()) {
+  if(isFull()) {
     return -1;
   }
-  this->top += 1;
-  this->_stackList[this->top] = element;
+  top += 1;
+  _stackList[top] = element;
   return element;
 }
 
 int Stack::pop()
 {
-  if(this->isEmpty()) {
+  if(isEmpty()) {
     return -1;
   }
-  this->top -= 1;
-  return this->_stackList[this->top + 1];
+  top -= 1;
+  return _stackList[top + 1];
 }
 
 bool Stack::isEmpty()
 {
-  return this->top <= 0 ? true : false;
+  return top <= 0 ? true : false;
 }
 
 bool Stack::isFull()
 {
-  return this->top >= this->_max ? true : false;
+  return top >= _max ? true : false;
 }
 
 int main()

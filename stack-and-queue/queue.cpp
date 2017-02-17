@@ -24,7 +24,7 @@ Queue::Queue(int length)
 {
   if(length > 0) {
     _length = length;
-    _queueList = new int[this->_length];
+    _queueList = new int[_length];
     _head = &_queueList[0];
     _tail = &_queueList[0];
     _tailIndex = 0;
@@ -60,8 +60,7 @@ int Queue::dequeue()
     return -1;
   }
 
-  int element;
-  element = *_head;
+  int element = *_head;
 
   if(_headIndex < _length) {
     _head ++;
